@@ -1,0 +1,43 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let inputBusqueda = document.getElementById("filtroTabla");
+    let tabla = document.querySelector(".table tbody"); // Seleccionar el tbody correcto
+
+    if (!inputBusqueda || !tabla) {
+        console.error("❌ ERROR: No se encontró el input 'filtroTabla' o la tabla");
+        return;
+    }
+
+    inputBusqueda.addEventListener("input", function () {
+        let valorBusqueda = this.value.trim();
+        if (valorBusqueda.length < 3) return;  // Evita búsquedas muy cortas
+
+        fetch(`/buscar_datos/Clientes/?q=${valorBusqueda}`)
+            .then(response => response.json())
+            .then(data => {
+                tabla.innerHTML = "";  // Limpia la tabla antes de agregar nuevos datos
+
+                if (data.length === 0) {
+                    tabla.innerHTML = "<tr><td colspan='4'>No se encontraron resultados</td></tr>";
+                    return;
+                }
+
+                data.forEach(cliente => {
+                    console.log("📌 Cliente individual:", cliente);
+                    let fila = `<tr>
+                        <td>${cliente.id}</td>
+                        <td>${cliente.grupocliente}</td>
+                        <td>${cliente.nitcliente}</td>
+                        <td>${cliente.cliente}</td>
+                        {% if 'Operador' not in user.groups.all|join:', ' %}
+                            <td><a href="/editar/${cliente.id}" class="btn btn-bevi" style="width:50px"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                            <td><a href="/eliminar/${cliente.id}" class="btn btn-cancelar" style="width:50px"><i class="fa-solid fa-trash"></i></a></td>
+                        {% endif %}
+                    </tr>`;
+                    tabla.innerHTML += fila;
+                });
+            })
+            .catch(error => console.error("Error al buscar datos:", error));
+    });
+});
+    </script>

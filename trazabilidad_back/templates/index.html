@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Trazabilidad CL</title>
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+<div class="form-title">
+    <h2>Seleccione su Centro Logístico</h2>
+</div>
+
+<div class="selecciones">
+    <div class="centro">
+        <img src="{% static 'img/yotoco.jpg' %}" alt="Yotoco">
+        <button onclick="seleccionarCentro('Yotoco')">Yotoco</button>
+    </div>
+
+    <div class="centro">
+        <img src="{% static 'img/santamarta.jpg' %}" alt="Santa Marta">
+        <button onclick="seleccionarCentro('Santa Marta')">Santa Marta</button>
+    </div>
+
+    <div class="centro">
+        <img src="{% static 'img/bogota.jpeg' %}" alt="Bogotá">
+        <button onclick="seleccionarCentro('Bogotá')">Bogotá</button>
+    </div>
+</div>
+
+<script>
+    function seleccionarCentro(centro) {
+        alert("Centro seleccionado: " + centro);
+        // Aquí puedes redirigir a otra página o guardar la selección en localStorage
+    }
+</script>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

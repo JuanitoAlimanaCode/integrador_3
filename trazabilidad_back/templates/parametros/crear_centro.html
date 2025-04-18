@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Crear Centros Logísticos</title>
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block contenido %}
+    
+    <div class="form-container">
+        <form method="post">
+            <h2 class="form-title">Crear Nuevo Centro Logístico</h2>
+            <hr style="width:100%;text-align:left;margin-left:0">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="botones-container">
+                <button class="btn btn-bevi" type="submit"><i class="fa-solid fa-warehouse"></i> Crear</button>
+                <a href="{%url 'Centros Logísticos'%}" class="btn btn-cancelar"><i class="fa-solid fa-xmark"></i> Cancelar</a>
+            </div>
+        </form>
+        {% if error %}
+            <p>{{error}}</p>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

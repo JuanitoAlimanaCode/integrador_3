@@ -1,0 +1,280 @@
+.form-login {
+    
+    padding: 0;
+}
+
+.form-login label {
+    margin-bottom: 0px; /* Elimina el margen inferior de las etiquetas */
+}
+
+.form-login input {
+    margin-top: 0px; /* Elimina el margen superior de los inputs */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid;
+    border-color: #10295E;
+    width: 100%;
+}
+
+.selecciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.user-name {
+    color: #10295E !important;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #10295e;
+}
+
+.centro {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.centro:hover {
+    transform: scale(1.05);
+}
+
+.centro img {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.centro button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #10295e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.centro button:hover {
+    background: #10295e;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 20px;
+}
+
+.botones-container {
+    margin-bottom: 15px; /* Espacio entre los botones y la tabla */
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Alineación a la izquierda (cámbialo si necesitas centrar) */
+    align-items: center; /* Alinea los botones verticalmente */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table thead th {
+    background-color: #10295E !important; /* Color de fondo */
+    color: white !important; /* Color del texto */
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle; /* Opciones: top, middle, bottom */
+}
+
+.table tbody td:nth-child(odd) {
+    background-color: #f2f2f2; /* Gris claro */
+}
+
+.table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0 10px 0;
+    overflow: hidden;
+}
+
+
+
+.form-control-2{
+    border-color: #10295E;
+    margin: 1%;
+    font-family: "Trebuchet MS", sans-serif; /* Fuente Trebuchet */
+    width: 100%;
+    
+}
+
+.form-title {
+    font-family: "Trebuchet MS", sans-serif; /* Fuente Trebuchet */
+    color: #10295E;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #10295E;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;   
+}
+
+
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px 0 5px 0;
+    border: 1px solid;
+    border-color: #10295E;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ajusta el ancho */
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(242,242,242,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+body {
+    background-image: url('https://www.bergevigia.com/wp-content/uploads/2023/03/slider_home_01.jpg'); /* Imagen desde Static */
+    background-size: cover;  /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.btn-bevi {
+    background-color: #10295e;
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 60%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.btn-bevi:hover {
+    background-color: #10295e; /* Un verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandado */
+    color: white;
+
+}
+
+/* Efecto al hacer clic */
+.btn-bevi:active {
+    background-color: #2C98CB;
+    transform: scale(0.95);
+    color: #10295E;
+
+}
+
+.btn-cancelar {
+    background-color: #FD5653;
+    color: white;
+    border: none;
+    border-radius: 8px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 40%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cancelar:hover {
+    background-color: #FD5653; /* Un verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandado */
+    color: white;
+}
+
+.btn-cancelar:active {
+    background-color: #10295E;
+    transform: scale(0.95);
+    color: white;
+}
+
+#filtroTabla {
+    width: 75%; /* Ajusta el ancho */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de letra */
+    border: 2px solid #10295E; /* Borde con color */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde azul al hacer clic */
+}
+
+#filtroTabla:focus {
+    border-color: #0d1b40; /* Color más oscuro al enfocar */
+    box-shadow: 0px 0px 5px rgba(16, 41, 94, 0.5); /* Sombra al hacer clic */
+}
+
+.pagination-container {
+    display: flex;
+    width: 75%;
+    justify-content: right; /* Alineado a la izquierda */
+    margin-top: 0px;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px; /* Espacio entre botones */
+}
+
+.pagination .page-item {
+    display: inline-block;
+}
+
+.pagination .page-link {
+    color: #10295E;  /* Color del texto */
+    border: 1px solid #10295E; /* Borde azul oscuro */
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background: #10295E;
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #10295E;  /* Color del botón seleccionado */
+    border-color: #10295E;
+    color: white;
+}
+

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Nombres Centros Logísticos</title>
+{% endblock %}
+
+{% block css %}
+    
+{% endblock %}
+
+{% block contenido %}
+    <h2>{{ page_title }}</h2>
+    <div class="contenedor">
+        <input type="text" id="filtroTabla" placeholder="Buscar..." class="form-control mb-2">
+        <div class="table-container"></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Centro Logístico</th>
+                        {% if 'Operador' not in user.groups.all|join:', ' %}
+                            <th colspan="2"><button class="btn btn-bevi" onclick="window.location.href='{% url 'CrearCentroLogístico' %}'" style="margin-left:10px; width: 150px;"><i class="fa-solid fa-plus"></i> Agregar</button></th>
+                        {% endif %}
+                        </tr>
+                </thead>
+                <tbody>
+                    {% for centros in centroslog %}
+                        <tr>
+                            <td>{{centros.id}}</td>
+                            <td>{{centros.nombrecl}}</td>
+                            {% if 'Operador' not in user.groups.all|join:', ' %}
+                                <td><a href="{% url 'EditarCentroLogístico' pk=centros.pk %}" class="btn btn-bevi" style="width:50px"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                <td><a href="{% url 'EliminarCentroLogístico' pk=centros.pk %}" class="btn btn-cancelar" style="width:50px"><i class="fa-solid fa-trash"></i></a></td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% include 'pag.html' %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
