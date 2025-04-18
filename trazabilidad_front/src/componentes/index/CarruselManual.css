@@ -1,0 +1,174 @@
+.carrusel-manual-container {
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .text-overlay h3,
+  .text-overlay p,
+  .text-overlay a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .control-button {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .control-button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .beneficios-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .beneficios-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #10295E;
+  }
+  
+  .beneficios {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .beneficio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .beneficio h3 {
+    font-size: 1.2rem;
+    color: #2C98CB;
+  }
+  
+  .beneficio p {
+    font-size: 1rem;
+    color: #10295E;
+  }
+  
+  .cta-button {
+    background-color: #10295E;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .cta-button:hover {
+    background-color: #2C98CB;
+  }
+  
+  .contacto-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #10295e;
+    color: white;
+  }
+  
+  .contacto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contacto-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contacto-info {
+    margin-top: 20px;
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e;
+  }
+  
+  .footer-container {
+    background-color: #FD5653; 
+    color: #ecf0f1; 
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .footer-container a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-container img.footer-logo {
+    width: 120px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }  
